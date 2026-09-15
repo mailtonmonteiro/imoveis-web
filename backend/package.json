@@ -1,0 +1,15 @@
+{
+  "name": "imoveis-app-backend",
+  "version": "1.0.0",
+  "description": "Sistema de Gerenciamento de Imóveis - Back-end (Node.js + Express + SQLite)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

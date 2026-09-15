@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imobiliária Top</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>Imobiliária Top</h1>
+      <p class="subtitulo">Equilibrando expectativas, maximizando resultados.</p>
+    </div>
+    <nav>
+      <a href="index.html" class="ativo">Home</a>
+      <a href="cadastro.html">Cadastrar Imóveis</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Imóveis Cadastrados</h2>
+      <table id="tabela-imoveis">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Modalidade</th>
+            <th>Endereço</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Área</th>
+            <th>Quartos</th>
+            <th>Banheiros</th>
+            <th>Valor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="corpo-tabela-imoveis">
+          <!-- preenchido via JavaScript -->
+        </tbody>
+      </table>
+      <p id="sem-imoveis" class="mensagem" style="display: none;">Nenhum imóvel cadastrado ainda.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Imobiliária Top. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
