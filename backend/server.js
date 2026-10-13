@@ -6,6 +6,7 @@ const cors = require('cors');
 const path = require('path');
 
 const imoveisRoutes = require('./routes/imoveis');
+const proprietariosRoutes = require('./routes/proprietarios');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // Rotas da API
 app.use('/api/imoveis', imoveisRoutes);
+app.use('/api/proprietarios', proprietariosRoutes);
 
 // Serve o front-end (HTML/CSS/JS) como arquivos estáticos
 app.use(express.static(path.join(__dirname, '..', 'frontend')));
